@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Net.NetworkInformation;
 using System.Threading.Tasks;
 
 namespace Runner
@@ -6,6 +7,11 @@ namespace Runner
     class Program
     {
         static async Task Main(string[] args)
+        {
+            await AsyncExample();
+        }
+
+        private static async Task AsyncExample()
         {
             var asyncApp = new Async.App();
 
