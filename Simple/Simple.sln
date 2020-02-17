@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Async", "Async\Async.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Runner", "Runner\Runner.csproj", "{78594CF9-C016-479C-9119-3FEFF8846E16}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadlyConcurrent", "BadlyConcurrent\BadlyConcurrent.csproj", "{ECF68D3E-E756-4209-A090-676B39DA089E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{78594CF9-C016-479C-9119-3FEFF8846E16}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78594CF9-C016-479C-9119-3FEFF8846E16}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78594CF9-C016-479C-9119-3FEFF8846E16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECF68D3E-E756-4209-A090-676B39DA089E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECF68D3E-E756-4209-A090-676B39DA089E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECF68D3E-E756-4209-A090-676B39DA089E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECF68D3E-E756-4209-A090-676B39DA089E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

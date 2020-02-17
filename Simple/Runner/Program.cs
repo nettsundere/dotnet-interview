@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Net.NetworkInformation;
 using System.Threading.Tasks;
 
 namespace Runner
@@ -9,6 +8,8 @@ namespace Runner
         static async Task Main(string[] args)
         {
             await AsyncExample();
+
+            ConcurrencyExample();
         }
 
         private static async Task AsyncExample()
@@ -20,6 +21,21 @@ namespace Runner
 
             var resultWithAwait = await asyncApp.AwaitComputeAsync();
             Console.WriteLine(resultWithAwait.StatusCode);
+        }
+
+        private static void ConcurrencyExample()
+        {
+            var concurrentApp = new BadlyConcurrent.App();
+
+            var value = 0;
+            var attempt = 0;
+            do
+            {
+                attempt++;
+                value = concurrentApp.Sum();
+            } while (value == BadlyConcurrent.App.Expected);
+            
+            Console.WriteLine($"Computation failed on attempt #{attempt}");
         }
     }
 }
