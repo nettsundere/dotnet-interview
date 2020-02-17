@@ -1,2 +1,2 @@
 # dotnet-interview
-Simple dotnet interview starter
+Just a couple of conversation starters for a dotnet / C# interviews.
